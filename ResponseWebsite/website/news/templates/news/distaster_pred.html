@@ -1,0 +1,35 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      fetch("http://127.0.0.1:8000/api/predict/")  // Fetch data from API
+          .then(response => response.json())  // Convert response to JSON
+          .then(data => {
+              console.log("API Data:", data);  // Debugging: Check data in the console
+  
+              // Display weather data
+              document.getElementById("weather").innerHTML = `
+                  <h3>Weather in Mumbai</h3>
+                  <p>Temperature: ${(data.weather.main.temp - 273.15).toFixed(2)}°C</p>
+                  <p>Humidity: ${data.weather.main.humidity}%</p>
+                  <p>Condition: ${data.weather.weather[0].description}</p>
+              `;
+  
+              // Display earthquake data
+              let eqHTML = "<h3>Recent Earthquakes</h3>";
+              data.earthquakes.forEach(eq => {
+                  eqHTML += `
+                      <p><strong>Location:</strong> ${eq.properties.place}</p>
+                      <p><strong>Magnitude:</strong> ${eq.properties.mag}</p>
+                      <p><strong>Time:</strong> ${new Date(eq.properties.time).toLocaleString()}</p>
+                      <hr>
+                  `;
+              });
+              document.getElementById("earthquake").innerHTML = eqHTML;
+          })
+          .catch(error => console.error("Error fetching data:", error));
+  });
+  </script>
+  
+  <!-- Add these divs where you want to display the data -->
+  <div id="weather"></div>
+  <div id="earthquake"></div>
+  

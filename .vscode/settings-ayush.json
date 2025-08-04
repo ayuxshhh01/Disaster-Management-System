@@ -1,0 +1,10 @@
+{
+    "dart.showTodos": false,
+    "editor.tokenColorCustomizations": {
+        "comments": "",
+        "textMateRules": []
+    },
+    "cmake.sourceDirectory": "C:/Users/ayush/OneDrive/Desktop/project A/ResponseApp/linux",
+    "git.ignoreLimitWarning": true,
+    "python.analysis.autoImportCompletions": true
+}

@@ -4,7 +4,5 @@
         "comments": "",
         "textMateRules": []
     },
-    "cmake.sourceDirectory": "C:/Users/ayush/OneDrive/Desktop/project A/ResponseApp/linux",
-    "git.ignoreLimitWarning": true,
-    "python.analysis.autoImportCompletions": true
+    "cmake.sourceDirectory": "C:/Users/ayush/OneDrive/Desktop/project A/ResponseApp/linux"
 }

@@ -1,0 +1,132 @@
+name: response
+description: Flutter application for disaster management.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+
+  flutter_localizations:
+    sdk: flutter
+
+  #  UI specific:
+  cupertino_icons: ^1.0.8
+  introduction_screen: ^3.1.16
+  drop_cap_text: ^1.0.7
+
+  #  Utilities
+  easy_localization: ^3.0.7+1
+  validators: ^3.0.0
+  url_launcher: ^6.3.1
+  share: ^2.0.4
+  intl:
+  geocoding: ^3.0.0
+
+
+  # Google Services:
+  provider: ^6.1.2
+  firebase_core: ^3.11.0
+  cloud_firestore: ^5.6.3
+  firebase_auth: ^5.4.2
+  google_generative_ai: ^0.4.6
+
+
+
+  google_maps_flutter: ^2.10.0
+
+  flutter_screenutil: any
+  geolocator: any
+  geocoder: any
+  flutter_dialogflow: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/json/credentials.json
+#    - language/en.json
+#    - language/hi.json
+#    - language/mr.json
+
+  fonts:
+    - family: BungeeShade
+      fonts:
+        - asset: assets/fonts/BungeeShade-Regular.ttf
+
+    - family: WorkSans
+      fonts:
+        - asset: assets/fonts/WorkSans-Regular.ttf
+
+    - family: Merriweather
+      fonts:
+        - asset: assets/fonts/Merriweather-Regular.ttf
+
+    - family: FredokaOne
+      fonts:
+        - asset: assets/fonts/FredokaOne.ttf
+
+    - family: Lora
+      fonts:
+        - asset: assets/fonts/Lora-Regular.ttf
+
+    - family: Anton-Regular
+      fonts:
+        - asset: assets/fonts/Anton-Regular.ttf
+
+    - family: PlayfairDisplay-Bold
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-Bold.ttf
+
+    - family: PlayfairDisplay-Regular
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-Regular.ttf
+
+#    Custom Icons
+    - family: Maps
+      fonts:
+        - asset: assets/fonts/Maps.ttf
+
+    - family: News
+      fonts:
+        - asset: assets/fonts/News.ttf
+
+    - family: Idea
+      fonts:
+        - asset: assets/fonts/Idea.ttf
+
+    - family: Share
+      fonts:
+        - asset: assets/fonts/Share.ttf
+
+    - family: ArrowFront
+      fonts:
+        - asset: assets/fonts/ArrowFront.ttf
+
+    - family: HeartIcon
+      fonts:
+        - asset: assets/fonts/HeartIcon.ttf
+
+    - family: Emergency
+      fonts:
+        - asset: assets/fonts/Emergency.ttf
+
+    - family: DrawerIcon
+      fonts:
+        - asset: assets/fonts/DrawerIcon.ttf
+
+

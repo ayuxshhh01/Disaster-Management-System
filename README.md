@@ -99,7 +99,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
-🙋‍♂️ Developer
 
-Ayush Dube  
-🔗 https://github.com/ayuxshhh01 | 💼 Final Year CS Student | 🚀 Aspiring AI Engineer
